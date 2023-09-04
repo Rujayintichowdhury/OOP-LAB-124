@@ -1,6 +1,6 @@
 class Person {
-    private String name;
-    private int age;
+    private final String name;
+    private final int age;
 
     // Constructor to initialize the name and age
     public Person(String name, int age) {
@@ -22,8 +22,8 @@ class Person {
 public class Main {
     public static void main(String[] args) {
         // Create two Person objects and set their attributes using the constructor
-        Person person1 = new Person("John", 30);
-        Person person2 = new Person("Alice", 25);
+        Person person1 = new Person("Alice", 30);
+        Person person2 = new Person("Arice", 25);
 
         // Print the name and age of the first person
         System.out.println("Person 1 - Name: " + person1.getName() + ", Age: " + person1.getAge());
